@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlintyCo - JavaScript</title>
+    <link rel="icon" href="Images/logo.png">
+    <link rel="stylesheet" href="CSS/portfolio.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul class="navlist">
+                    <li><a href="#contact">Contact</a></li><!--navigates to the contact section in the footer(internal link)-->
+                    <li><a href="fishraq_A3_about.html">About</a></li><!--navigates to the about page(external link)-->
+                    <li><a href="fishraq_A3_resume.html">Resume</a></li><!--navigates to the resume page(external link)-->
+                    <li><a href="fishraq_A3_web_skills.html">Web-Dev</a></li>
+                    <li><a href="skill_communication.html">Communication</a></li>
+                    <li><a href="skill_marketing.html">Marketing</a></li>
+                    <li><a href="skill_design.html">Graphic-Design</a></li>
+                    <li><a href="javascriptpage.html">JavaScript</a></li>
+                    <li><a href="index.html">Home</a></li><!--navigates to homepage(same page)-->
+                </ul>
+            </nav>
+        </div><br><br><br>
+        <a href="index.html" class="logo">
+            <img src="Images/logo.png" alt="Company logo" width="100"><!--to add the logo on the page-->
+        </a>
+    </header>
+    <main>
+        <div class="javascript_form">
+            <h1>Corporate Newsletter Portal Demonstration</h1>
+            <p>Functional HTML5 and Javascript form interface:</p>
+            <!--Create button to launch the form-->
+            <button type="button" id="launchFormBtn" class="portal_btn">
+                Launch Newsletter Signup Form
+            </button>
+        </div>
+    </main>
+    <!--When user clicks the button, opens form in a new tab-->
+    <script>
+        launchButton = document.getElementById('launchFormBtn');
+        launchButton.onclick = function() {
+            window.open('newsletter.html', '_blank');
+        };
+    </script>
+</body>
+</html>
